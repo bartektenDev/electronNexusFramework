@@ -1,0 +1,19 @@
+{
+  "name": "electronnexusframework",
+  "version": "1.0.0",
+  "description": "A base framework for noobs to quick start their software.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "nexus",
+    "framework"
+  ],
+  "author": "Bart Tarasewicz",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.0.1"
+  }
+}
