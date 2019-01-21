@@ -1,8 +1,8 @@
 How to install to your electron app
 
-Step 1. Open CMD (or git) and enter: npm install electronNexusFramework
+**Step 1.** Open CMD (or git) and enter: npm install electronNexusFramework
 
-Step 2. Inside of main.js, enter the following code within 
+**Step 2.** Inside of main.js, enter the following code within 
 
 app.on('ready', function(){
 
@@ -15,7 +15,7 @@ app.on('ready', function(){
 
 });
 
-Step 3. Save it and close it. Then run the program using: npm start
+**Step 3.** Save it and close it. Then run the program using: npm start
 
 Changes log:
 
