@@ -1,4 +1,3 @@
-
 How to install to your electron app
 
 Step 1. Open CMD (or git) and enter: npm install electronNexusFramework
