@@ -1,3 +1,5 @@
+# electronNexusFramework
+
 **What is it?**
 
 This framework is designed to give you a basic HTML UI with some electron features implemented with it. It gives you a quick
@@ -16,6 +18,3 @@ start to developing a basic electron app without creating a new UI everytime, th
 Changes log:
 
 Initial Commit v 1.0.0
-
-# electronNexusFramework
-A base framework for noobs to quick start their software with electron.
