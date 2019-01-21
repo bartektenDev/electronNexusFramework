@@ -17,4 +17,3 @@ Initial Commit v 1.0.0
 
 # electronNexusFramework
 A base framework for noobs to quick start their software with electron.
-##3b384554b76658ebc3a3ce78f436359f18a53976
