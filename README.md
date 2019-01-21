@@ -3,7 +3,7 @@
 This framework is designed to give you a basic HTML UI with some electron features implemented with it. It gives you a quick
 start to developing a basic electron app without creating a new UI everytime, this one has navigational tabs.
 
-<img src="https://ibb.co/9YmKhfm" width="350" title="hover text">
+<img src="https://i.ibb.co/zfW9FLW/2.png" width="350" title="hover text">
 
 **How to download the framework itself (do not merge with your existing project! do this in your git projects folder)**
 
