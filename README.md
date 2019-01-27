@@ -1,28 +1,20 @@
-<<<<<<< HEAD
-How to install to your electron app
+# electronNexusFramework
 
-Step 1. Open CMD (or git) and enter: npm install electronNexusFramework
+**What is it?**
 
-Step 2. Inside of main.js, enter the following code within 
+This framework is designed to give you a basic HTML UI with some electron features implemented with it. It gives you a quick
+start to developing a basic electron app without creating a new UI everytime, this one has navigational tabs.
 
-app.on('ready', function(){
+<img src="https://i.ibb.co/zfW9FLW/2.png" width="auto" title="Preview of Nexus Framework">
 
-  // Load html in window
-  mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
-    protocol: 'file:',
-    slashes:true
-  }));
+**How to download the framework itself (do not merge with your existing project! do this in your git projects folder)**
 
-});
+**Step 1.** Open CMD (or git) and enter: git clone https://github.com/bartektenDev/electronNexusFramework.git
 
-Step 3. Save it and close it. Then run the program using: npm start
+**Step 2.** Save it and close it. Then run the program using: npm start
+
+**Step 3.** If all is working, you're good. Now from here on out you can start to develop you application idea! Best of luck!
 
 Changes log:
----------------------
+
 Initial Commit v 1.0.0
----------------------
-=======
-# electronNexusFramework
-A base framework for noobs to quick start their software with electron.
->>>>>>> 3b384554b76658ebc3a3ce78f436359f18a53976
