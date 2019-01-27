@@ -7,7 +7,7 @@
 This framework is designed to give you a basic HTML UI with some electron features implemented with it. It gives you a quick
 start to developing a basic electron app without creating a new UI everytime, this one has navigational tabs.
 
-<img src="/preferencesview.PNG" width="800px" title="SolarView UI">
+<img src="/newelectronnf.PNG" width="800px" title="SolarView UI">
 
 **How to download the framework itself (do not merge with your existing project! do this in your git projects folder)**
 
