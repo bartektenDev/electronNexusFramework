@@ -1,5 +1,7 @@
 # electronNexusFramework
 
+**Version:** Alpha 1.1.5
+
 **What is it?**
 
 This framework is designed to give you a basic HTML UI with some electron features implemented with it. It gives you a quick
