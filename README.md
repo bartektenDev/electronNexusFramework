@@ -19,4 +19,8 @@ start to developing a basic electron app without creating a new UI everytime, th
 
 Changes log:
 
-Initial Commit v 1.0.0
+v 1.1.5
+Redesigned the UI with more modern and neutral colors. Also added functionality to the tabs and their respective pages.
+
+v 1.0.0
+Initial Commit
