@@ -1,27 +1,48 @@
 * {box-sizing: border-box;}
 
 body {
-  background: #e1e1e1;
+  background: linear-gradient(#626a7a 100%, #444a58 100%);
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-button  {
-  background-color: white;
+/* BELOW = Navigational Buttons */
+[nav~=true] {
+  display: block;
+  background-color: #F8F8F8;
   border: none;
   color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   border-radius: 50px;
   cursor: hand;
-  float: left;
+  margin-top: 10px;
+  outline:none;
 }
+/* ABOVE = Navigational Buttons */
+
+/* BELOW = Normal Buttons */
+[nav~=false] {
+  display: block;
+  background-color: #F8F8F8;
+  border: none;
+  color: #444a58;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: hand;
+  margin-top: 10px;
+  outline:none;
+}
+/* ABOVE = Normal Buttons */
 
 .container_box  {
-  background-color: #fff;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.6), 0 5px 20px 3px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #fdfefe 1%, #cecfd1 100%);
   border: none;
   color: black;
   padding: 15px 32px;
@@ -30,39 +51,59 @@ button  {
   display: inline-block;
   font-size: 16px;
   border-radius: 10px;
-  cursor: hand;
+  cursor: pointer;
   margin: 6px;
+  outline:none;
 }
+
+/* BELOW = For a clean display when highlighting over these clickables */
+[highlightable~=yes]:hover {
+  background-color: #B1B4BC;
+  transition: all 0.2s ease-in-out;
+}
+/* ABOVE = For a clean display when highlighting over these clickables */
+
+/* BELOW = clean fade elements */
+[fadein~=yes] {
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+/* ABOVE = clean fade elements */
 
 .navigate_bar {
   color: navy;
   margin-left: 20px;
-  margin-top: 20px;
 }
 
 .menuTitleDiv  {
   display: inline-block;
   margin-top: 1px;
-  margin-left: 50px;
+  margin-left: 140px;
   top: 200px;
   font-size: 40px;
-  color: black;
+  color: #E5E7E9;
 }
 
 .contentView  {
+  margin-top: -226px;
   margin-left: 200px;
+  max-width: 700px;
+  cursor: pointer;
 }
 
 /* everything below = Top Bar */
 .header {
   overflow: hidden;
-  background: linear-gradient(to left, #e1e1e1 5%, #cecece 100%);
+  background: linear-gradient(#626a7a 100%, #444a58 100%);
   padding: 15px 20px;
 }
 
 .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -78,7 +119,7 @@ button  {
 
 #miniheader{
   background-color: #fff;
-  color: black;
+  color: #444a58;
 }
 
 .header a.active {
@@ -120,3 +161,209 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 /* everything above = Table UI for devices */
+
+/* everything below = Switch Button Effects, Colors and Design */
+label {
+  display: block;
+  width: 54px;
+  height: 32px;
+  margin: 0px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  background-color: #525a68;
+}
+
+input[isSwitch~="yes"] {
+  display: none;
+}
+
+i {
+  height: 28px;
+  width: 28px;
+  background: #ffffff;
+  display: inline-block;
+  border-radius: 100px;
+  margin-top: 2px;
+  margin-left: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  pointer-events: none;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+label:hover>i {
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.20);
+  transform: scale(1.01);
+}
+
+input:checked+label>i {
+  margin-left: 24px;
+}
+
+label:active {
+  background-color: #A6B9CB;
+}
+
+label:active>i {
+  width: 34px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+input:checked+label:active>i {
+  margin-left: 18px;
+}
+
+input:checked+label {
+  background-color: #00A591;
+}
+/*  everything above = Switch Button Effects, Colors and Design */
+
+/* everything below = mini library for fade effects */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* everything above = mini library for fade effects */
+
+/* everything below = progress bar UI design and colors */
+.demo-preview {
+  width: 50%;
+  text-align: center;
+}
+
+.progress {
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  box-shadow: none;
+}
+.progress.progress-xs {
+  height: 5px;
+  margin-top: 5px;
+}
+.progress.progress-sm {
+  height: 10px;
+  margin-top: 5px;
+}
+.progress.progress-lg {
+  height: 25px;
+}
+.progress.vertical {
+  position: relative;
+  width: 20px;
+  height: 200px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.progress.vertical > .progress-bar {
+  width: 100% !important;
+  position: absolute;
+  bottom: 0;
+}
+.progress.vertical.progress-xs {
+  width: 5px;
+  margin-top: 5px;
+}
+.progress.vertical.progress-sm {
+  width: 10px;
+  margin-top: 5px;
+}
+.progress.vertical.progress-lg {
+  width: 30px;
+}
+
+.progress-bar {
+  background-color: #2196F3;
+  box-shadow: none;
+}
+.progress-bar.text-left {
+  text-align: left;
+}
+.progress-bar.text-left span {
+  margin-left: 10px;
+}
+.progress-bar.text-right {
+  text-align: right;
+}
+.progress-bar.text-right span {
+  margin-right: 10px;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 80px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 80px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.progress.active .progress-bar,
+.progress-bar.active {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
+  animation: progress-bar-stripes 2s linear infinite;
+}
+
+.progress-striped .progress-bar,
+.progress-bar-striped {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+}
+
+.progress-bar-secondary {
+  background-color: #323a45;
+}
+
+.progress-bar-default {
+  background-color: #B0BEC5;
+}
+
+.progress-bar-success {
+  background-color: #64DD17;
+}
+
+.progress-bar-info {
+  background-color: #29B6F6;
+}
+
+.progress-bar-warning {
+  background-color: #FFD600;
+}
+
+.progress-bar-danger {
+  background-color: #ef1c1c;
+}
+/* everything above = progress bar UI design and colors */

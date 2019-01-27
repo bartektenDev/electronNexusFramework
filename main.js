@@ -17,9 +17,9 @@ global.sharedObj = {responseGrabbed: "Initialized global variable"};
 app.on('ready', function(){
   // Create new window
   mainWindow = new BrowserWindow({
-    width: 900,
-    height: 600,
-    minWidth: 900,
+    width: 1000,
+    height: 700,
+    minWidth: 1000,
     minHeight: 600,
     'node-integration': false});
   //change user agent for streaming videos so its enabled by server side hehe

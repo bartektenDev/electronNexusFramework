@@ -10,8 +10,8 @@
     <title>electronNexusFramework</title>
   </head>
   <div class="header">
-  <a class="logo">electronNexusFramework</a>
-  <a id="miniheader">Alpha ver: 1.1.5</a>
+  <a class="logo">Nexus Framework</a>
+  <a id="miniheader">Alpha ver: 1.1.8</a>
   <div class="top_bar_view">
     <img src="./assets/web_hi_res_512.png" width="60px" height="60px" id="">
   </div>
@@ -19,14 +19,17 @@
   <body onload="setup();">
     <div class="navigate_bar">
       <div class="menuTitleDiv">
-        <a id="menuTitle">Tab 1</a>
+        <a id="menuTitle" fadein="yes">Tab 1</a>
       </div>
-      <button id="page1" onclick="navigate(this.id);">Tab 1</button>
-      <p>
-      <button id="page2" onclick="navigate(this.id);">Tab 2</button>
+      <div class="buttonList">
+        <button nav="true" id="page1" onclick="navigate(this.id);" highlightable="yes" fadein="yes">Tab 1</button>
+        <button nav="true" id="page2" onclick="navigate(this.id);" highlightable="yes" fadein="yes">Tab 2</button>
+        <button nav="true" id="page3" onclick="navigate(this.id);" highlightable="yes" fadein="yes">Tab 3</button>
+        <button nav="true" id="page4" onclick="navigate(this.id);" highlightable="yes" fadein="yes">Tab 4</button>
+      </div>
     </div>
 
-    <div id="contents" class="contentView" display="page1.html">
+    <div id="contents" class="contentView">
       <!-- contents will load here -->
     </div>
 
