@@ -17,13 +17,8 @@ global.sharedObj = {responseGrabbed: "Initialized global variable"};
 app.on('ready', function(){
   // Create new window
   mainWindow = new BrowserWindow({
-<<<<<<< HEAD
-    width: 1000,
-    height: 700,
-=======
     width: 900,
     height: 600,
->>>>>>> 1f9429e22d84e223e2aa84095f08c8feea00aaa6
     minWidth: 900,
     minHeight: 600,
     'node-integration': false});
@@ -34,11 +29,7 @@ app.on('ready', function(){
   };
   //when we do finally get the response link we will still be identifying as SMP
   ses.webRequest.onBeforeSendHeaders(filter, function(details, callback) {
-<<<<<<< HEAD
     details.requestHeaders['User-Agent'] = "electronNexusFramework";
-=======
-    details.requestHeaders['User-Agent'] = "Nexus Framework";
->>>>>>> 1f9429e22d84e223e2aa84095f08c8feea00aaa6
     callback({cancel: false, requestHeaders: details.requestHeaders});
   });
   //define the download path for downloaded videos
