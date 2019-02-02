@@ -19,6 +19,9 @@ start to developing a basic electron app without creating a new UI everytime. It
 
 Changes log:
 
+v 1.1.8
+Beautiful Splash Screen along with code clean up
+
 v 1.1.5
 Redesigned the UI with more modern and neutral colors. Also added functionality to the tabs and their respective pages.
 
