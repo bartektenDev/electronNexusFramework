@@ -21,6 +21,7 @@ app.on('ready', function(){
     height: 700,
     minWidth: 1000,
     minHeight: 600,
+    fullscreen: false,
     'node-integration': false});
   //change user agent for streaming videos so its enabled by server side hehe
   var ses = mainWindow.webContents.session;
@@ -36,7 +37,7 @@ app.on('ready', function(){
   ses.setDownloadPath(".\\Downloads")
   // Load html in window
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, 'splash.html'),
     protocol: 'file:',
     slashes:true
   }));

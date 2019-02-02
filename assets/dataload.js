@@ -1,5 +1,13 @@
 //Copyright and all rights all reserved to Bart Tarasewicz
 
+
+function splash_screen()  {
+  //wait 12 seconds then load main layout
+  setTimeout(function () {
+          window.location.href = "index.html";
+    }, 12000);
+}
+
 function setup()
 {
   runDisplay();
@@ -59,6 +67,7 @@ function navigate(btnID)
           if (this.readyState == 4) {
             if (this.status == 200) {
               document.getElementById("contents").innerHTML = this.responseText;
+              document.getElementById("menuTitle").innerHTML = "Tab 1";
             }
             if (this.status == 404) {
               elmnt.innerHTML = "Page not found.";
