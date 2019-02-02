@@ -1,6 +1,6 @@
 # electronNexusFramework
 
-**Version:** Alpha 1.1.6
+**Version:** Alpha 1.1.8
 
 **What is it?**
 
