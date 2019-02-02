@@ -7,9 +7,9 @@
 This framework is designed to give you a basic HTML UI with some electron features implemented with it. It gives you a quick
 start to developing a basic electron app without creating a new UI everytime. It's like activities in Android, but for Electron.
 
-<img src="/newsplash.PNG" width="800px" title="electronNexusFramework">
+<img src="/assets/newsplash.PNG" width="800px" title="electronNexusFramework">
 
-<img src="/tab1.PNG" width="800px" title="electronNexusFramework">
+<img src="/assets/tab1.PNG" width="800px" title="electronNexusFramework">
 
 <img src="/newelectronnf.PNG" width="800px" title="electronNexusFramework">
 
